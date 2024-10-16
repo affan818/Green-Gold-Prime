@@ -1,0 +1,73 @@
+/* OwlCarousel.css */
+@import url("lib/owlcarousel/assets/owl.carousel.min.css");
+@import url("lib/owlcarousel/assets/owl.theme.default.min.css");
+
+/* Overlay Styles */
+.product-item {
+  position: relative; /* Ensure position-relative on the parent for absolute positioning */
+  overflow: hidden; /* Hide overflow for the overlay */
+}
+
+.product-item img {
+  transition: transform 0.3s ease; /* Add a scale effect to the image */
+}
+
+.product-item:hover img {
+  transform: scale(1.1); /* Slightly scale the image on hover */
+}
+
+.product-item .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+.product-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.owl-prev,
+.owl-next {
+  background-color: green; /* Change the background color */
+  border: none; /* Remove the border */
+  color: white; /* Change the text color */
+  font-size: 24px; /* Adjust the size of the arrow */
+  width: 40px; /* Button width */
+  height: 40px; /* Button height */
+  border-radius: 50%; /* Make the buttons circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: darkgreen; /* Change color on hover */
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 24px; /* Adjust the size of the arrow */
+}
+
+/* Positioning the buttons */
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+}
+
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+}

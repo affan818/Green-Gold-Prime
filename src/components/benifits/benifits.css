@@ -1,0 +1,39 @@
+/* In your CSS file */
+.image-left {
+  margin-right: 1rem; /* Space between image and text */
+}
+
+.mycard {
+  border-radius: 10px;
+  transition: background-color 0.5s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mycard:hover {
+  background-color: rgba(100, 188, 73, 0.9); /* Darker shade on hover */
+  transform: scale(1.02); /* Slightly grow the card */
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(114, 200, 127, 0.1);
+}
+
+button:hover {
+  background-color: white;
+  color: green;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+}

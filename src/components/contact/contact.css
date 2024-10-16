@@ -1,0 +1,71 @@
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* contact.css */
+
+.page-header {
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.contact-form {
+  background-color: transparent;
+  backdrop-filter: blur(10px); /* Darker background for the form */
+  color: green; /* White text for better readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem; /* Padding for inner space */
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px; /* Increased padding for better usability */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #333; /* Dark background for inputs */
+  color: white; /* White text */
+  font-size: 1rem; /* Font size */
+  transition: all 0.3s; /* Smooth transition */
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Light color for placeholder text */
+}
+
+.form-input:focus {
+  outline: none; /* Remove default outline */
+  border: 2px solid #00ffcc; /* Highlight border on focus */
+}
+
+.submit-button {
+  padding: 10px 20px; /* Button padding */
+  background-color: green; /* Button color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-family: cursive; /* Cursive font */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: green;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem; /* Adjust padding on smaller screens */
+  }
+
+  .form-input {
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+
+  .submit-button {
+    width: 100%; /* Full width for button on small screens */
+  }
+}

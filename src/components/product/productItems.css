@@ -1,0 +1,15 @@
+/* ProductItems.css */
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 10px 30px rgba(138, 193, 67, 0.7); /* Add shadow for depth */
+}
+
+.item {
+  margin: 15px; /* Add some space between items */
+}

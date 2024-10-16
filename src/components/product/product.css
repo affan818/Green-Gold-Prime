@@ -1,0 +1,25 @@
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  background: green; /* Green background */
+  color: #fff; /* White arrow color */
+  padding: 20px; /* Larger padding for bigger arrow */
+  border-radius: 50%; /* Circular arrow background */
+  cursor: pointer;
+  transform: translateY(-50%);
+  font-size: 32px; /* Increase font size for bigger arrow */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.slider-arrow-left {
+  left: -45px; /* Adjust left position for bigger size */
+}
+
+.slider-arrow-right {
+  right: -45px; /* Adjust right position for bigger size */
+}
+
+.slider-arrow:hover {
+  background: darkgreen; /* Dark green on hover */
+}

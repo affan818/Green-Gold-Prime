@@ -1,0 +1,68 @@
+/* learnMore.css */
+
+.container-fluid {
+  background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+.image-container {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden; /* Hide overflow for better effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Initial shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth scaling and shadow */
+}
+
+.image-container:hover {
+  transform: scale(1.05) rotate(2deg); /* Scale and slight rotate effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.hover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the area */
+  transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth fade and transform */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(136, 180, 78, 0.7); /* Semi-transparent green shade */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.overlay-text {
+  color: white;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px; /* Specific font size for overlay text */
+  transform: translateY(20px); /* Initial position for animation */
+  opacity: 0; /* Start invisible */
+  transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+}
+
+/* Show overlay and animate text on hover */
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container:hover .overlay-text {
+  transform: translateY(0); /* Move to original position */
+  opacity: 1; /* Fade in */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%; /* Full width on small screens */
+  }
+}
