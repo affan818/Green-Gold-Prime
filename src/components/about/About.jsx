@@ -1,4 +1,3 @@
-import aboutImg from "../../../img/about-3.jpg";
 
 function About() {
   return (

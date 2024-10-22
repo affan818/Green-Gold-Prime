@@ -4,6 +4,7 @@ import Counter from "../../effect/Counter";
 import Info from "../info/Info";
 import LearnMore from "../learnMore/LearnMore";
 import Benifits from "../benifits/Benifits";
+import WhatsAppButton from "../whatsapp/WhatsAppButton";
 
 function Home() {
   return (
@@ -48,6 +49,8 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* Move WhatsAppButton outside any large sections */}
+      <WhatsAppButton />
     </div>
   );
 }
