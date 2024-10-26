@@ -1,25 +1,12 @@
-.slider-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  background: green; /* Green background */
-  color: #fff; /* White arrow color */
-  padding: 20px; /* Larger padding for bigger arrow */
-  border-radius: 50%; /* Circular arrow background */
-  cursor: pointer;
-  transform: translateY(-50%);
-  font-size: 32px; /* Increase font size for bigger arrow */
-  transition: background 0.3s ease; /* Smooth transition for hover effect */
+.product-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 10px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+  /* padding: 20px; */
 }
 
-.slider-arrow-left {
-  left: -45px; /* Adjust left position for bigger size */
-}
-
-.slider-arrow-right {
-  right: -45px; /* Adjust right position for bigger size */
-}
-
-.slider-arrow:hover {
-  background: darkgreen; /* Dark green on hover */
-}
+/* .item {
+  flex: 1 1 calc(25% - 20px); /* 25% width minus the gap to fit 4 cards per row */
+  max-width: 300px; /* Limit max width for smaller screens */
+} */

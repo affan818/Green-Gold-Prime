@@ -1,18 +1,18 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../../img/logo.png";
-import { CgMenuGridO } from "react-icons/cg";
+// import { CgMenuGridO } from "react-icons/cg";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
+import { Dropdown } from "react-bootstrap";
 
 function Header() {
-  // State to track whether the menu is open or not
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
-  // Toggle the navbar state
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
 
-  // Close the navbar when a link is clicked
   const handleNavLinkClick = () => {
     setIsNavbarOpen(false);
   };
@@ -21,8 +21,8 @@ function Header() {
     <div
       className="container-fluid sticky-top"
       style={{
-        backgroundColor: "rgba(255, 255, 255, 0.7)", // Light transparent background
-        backdropFilter: "blur(10px)", // Blur effect
+        backgroundColor: "rgba(255, 255, 255, 0.7)",
+        backdropFilter: "blur(10px)",
       }}
     >
       <div className="container">
@@ -42,8 +42,11 @@ function Header() {
             }`}
             onClick={toggleNavbar}
           >
-            {/* Conditionally render the hamburger or cross icon */}
-            {isNavbarOpen ? <CgMenuGridO /> : <CgMenuGridO />}
+            {isNavbarOpen ? (
+              <IoIosArrowDropleftCircle />
+            ) : (
+              <IoIosArrowDroprightCircle />
+            )}
           </button>
           <div
             className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`}
@@ -59,6 +62,61 @@ function Header() {
               >
                 Home
               </NavLink>
+
+              {/* Dropdown with custom Bootstrap styling */}
+              <Dropdown className="nav-item">
+                <Dropdown.Toggle
+                  as="a"
+                  className="nav-link dropdown-toggle" // Use nav-link dropdown-toggle styling
+                  href="#"
+                  id="dropdownPages"
+                >
+                  Services
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu className="dropdown-menu bg-light rounded-0 m-0">
+                  <Dropdown.Item
+                    as={NavLink}
+                    to="/sandalwood"
+                    className="dropdown-item"
+                  >
+                    Sandalwood Farms & Club House
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    as={NavLink}
+                    to="/luxury"
+                    className="dropdown-item"
+                  >
+                    Luxury 3bhk Villa
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    as={NavLink}
+                    to="/commercial"
+                    className="dropdown-item"
+                  >
+                    Any Commercial Plots
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+
+              <NavLink
+                to="/gallery"
+                className="nav-item nav-link"
+                activeClassName="active"
+                onClick={handleNavLinkClick}
+              >
+                Gallery
+              </NavLink>
+
+              <NavLink
+                to="/blog"
+                className="nav-item nav-link"
+                activeClassName="active"
+                onClick={handleNavLinkClick}
+              >
+                Blog
+              </NavLink>
+
               <NavLink
                 to="/about"
                 className="nav-item nav-link"
@@ -75,13 +133,14 @@ function Header() {
               >
                 Contact
               </NavLink>
+
               <NavLink
-                to="/product"
+                to="/carrier"
                 className="nav-item nav-link"
                 activeClassName="active"
                 onClick={handleNavLinkClick}
               >
-                Product
+                Carrier
               </NavLink>
             </div>
           </div>
