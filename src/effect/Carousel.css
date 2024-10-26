@@ -1,3 +1,11 @@
-.custom-carousel-caption {
-  background: transparent !important; /* Remove background */
+.carousel-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures the video covers the container without distortion */
+}
+
+@media (max-width: 768px) {
+  .carousel-video {
+    height: auto; /* Adjust height on smaller screens */
+  }
 }

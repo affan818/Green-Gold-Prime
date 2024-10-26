@@ -1,8 +1,11 @@
 import "./info.css";
-import GreenGoldSunset from "../../../img/GreenGoldSunset.jpg";
 import { Link } from "react-router-dom";
-
+import icon from "../../../img/youtubeicon.png";
 function Info() {
+  const videoId = "ZJG1FjH1cEE"; // Replace with your actual YouTube video ID
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+
   return (
     <div className="container-fluid product py-5 my-5">
       <div className="container py-5">
@@ -17,7 +20,7 @@ function Info() {
           <div className="col-12 col-md-6 text-center mb-4 mb-md-0">
             <p
               className="display-6"
-              style={{ fontSize: "4rem", fontFamily: "poppins" }}
+              style={{ fontSize: "2rem", fontFamily: "poppins" }}
             >
               Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet.
             </p>
@@ -27,13 +30,19 @@ function Info() {
               </button>
             </Link>
           </div>
-          <div className="col-12 col-md-6 text-center">
-            <img
-              style={{ borderRadius: "10px" }}
-              className="w-100"
-              src={GreenGoldSunset}
-              alt="GreenGoldSunset"
-            />
+          <div className="col-12 col-md-6 text-center position-relative">
+            <a href={videoUrl} target="_blank" rel="noopener noreferrer">
+              <img
+                style={{ borderRadius: "10px", cursor: "pointer" }}
+                className="w-100"
+                src={thumbnailUrl}
+                alt="Video Thumbnail"
+              />
+              <div className="play-button">
+                <img src={icon} alt="youtubebtn" />{" "}
+                {/* You can replace this with an SVG or icon */}
+              </div>
+            </a>
           </div>
         </div>
       </div>
