@@ -1,0 +1,11 @@
+/* blog.css */
+.card {
+  border: none; /* Customize as needed */
+  border-radius: 10px; /* Add border radius for smoother edges */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}

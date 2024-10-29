@@ -1,0 +1,14 @@
+/* gallery.css */
+
+.page-header {
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.img-fluid {
+  border-radius: 10px; /* Rounded corners for images */
+  transition: transform 0.3s; /* Smooth transform */
+}
+
+.img-fluid:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}

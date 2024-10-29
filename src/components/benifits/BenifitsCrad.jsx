@@ -18,12 +18,8 @@ function BenifitsCrad() {
       <div className="col-sm-12 col-lg-4 text-center text-lg-left">
         <img
           style={{
-            maxHeight: "50%",
-            maxWidth: "80%",
-            minHeight: "50%",
-            minWidth: "100%",
-            margin: "0 auto",
-            marginRight: "100%",
+            maxHeight: "100%",
+            maxWidth: "100%",
             borderRadius: "10px",
           }}
           src={GreenGoldSunset}
@@ -34,7 +30,7 @@ function BenifitsCrad() {
         <h2
           id="benefit-title"
           className="display-6"
-          style={{ fontSize: "1.5rem", fontFamily: "Poppins, sans-serif" }}
+          style={{ fontSize: "1.5rem", fontFamily: "Poppins" }}
         >
           Benefit Title Here
         </h2>
@@ -47,7 +43,7 @@ function BenifitsCrad() {
           consequatur at molestiae. Facere, maxime nobis!
         </p>
         <Link to={"about"}>
-          <button className="mb-sm-5" style={{ fontFamily: "cursive" }}>
+          <button className="mb-sm-5" style={{ fontFamily: "Poppins" }}>
             Learn More
           </button>
         </Link>

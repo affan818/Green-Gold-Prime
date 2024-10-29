@@ -18,7 +18,6 @@ function Benifits() {
           </h1>
         </header>
         <div className="row">
-          {/* Consider passing an array of benefits to BenifitsCrad for dynamic rendering */}
           {Array.from({ length: 4 }).map((_, index) => (
             <BenifitsCrad key={index} />
           ))}

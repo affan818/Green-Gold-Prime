@@ -1,12 +1,12 @@
 .product-list {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap */
-  gap: 10px; /* Space between cards */
+  gap: 1rem; /* Space between cards */
   justify-content: center; /* Center cards horizontally */
   /* padding: 20px; */
 }
 
-/* .item {
-  flex: 1 1 calc(25% - 20px); /* 25% width minus the gap to fit 4 cards per row */
-  max-width: 300px; /* Limit max width for smaller screens */
-} */
+.item {
+  flex: 1 1 calc(25% - 20px);
+  max-width: 300px;
+}

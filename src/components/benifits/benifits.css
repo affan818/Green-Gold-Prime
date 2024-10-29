@@ -1,4 +1,4 @@
-/* In your CSS file */
+/* benifits.css */
 .image-left {
   margin-right: 1rem; /* Space between image and text */
 }
@@ -7,6 +7,7 @@
   border-radius: 10px;
   transition: background-color 0.5s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .mycard:hover {
@@ -36,4 +37,16 @@ button:hover {
 
 button:active {
   transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mycard {
+    flex-direction: column; /* Stack elements on small screens */
+  }
+
+  img {
+    max-width: 100%; /* Ensure images fit within the card */
+    height: auto; /* Maintain aspect ratio */
+  }
 }

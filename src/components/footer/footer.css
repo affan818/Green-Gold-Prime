@@ -1,3 +1,21 @@
+/* Global box-sizing */
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Footer CSS */
+.footer {
+  word-wrap: break-word; /* Prevent overflow */
+  overflow: hidden; /* Prevent overflow */
+  width: 100%; /* Ensure the footer takes the full width */
+}
+
+.container-fluid {
+  width: 100%; /* Ensure it takes full width */
+  padding-left: 0; /* Prevent horizontal scroll */
+  padding-right: 0; /* Prevent horizontal scroll */
+}
+
 button {
   background-color: green;
   color: white;

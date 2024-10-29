@@ -1,0 +1,25 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text */
+  background-color: #f8f9fa; /* Light background */
+}
+
+.not-found-image {
+  max-width: 80%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.not-found-message {
+  font-size: 2rem; /* Larger text for the main message */
+  color: #343a40; /* Dark text color */
+  margin-top: 20px; /* Space above the message */
+}
+
+.not-found-description {
+  font-size: 1rem; /* Smaller description text */
+  color: #6c757d; /* Lighter text color */
+}

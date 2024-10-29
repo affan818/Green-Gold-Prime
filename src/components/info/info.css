@@ -26,8 +26,18 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem; /* Adjust size as needed */
- /* Optional: add a background for better visibility */
+  /* Optional: add a background for better visibility */
   border-radius: 50%; /* Optional: make it circular */
   padding: 0.5rem; /* Optional: add padding */
   cursor: pointer;
+}
+
+/* info.css */
+.play-button:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Dark background on hover for visibility */
 }

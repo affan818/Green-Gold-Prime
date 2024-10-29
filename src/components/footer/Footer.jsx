@@ -11,29 +11,56 @@ const Footer = () => {
           <div className="row g-5">
             <div className="col-lg-4 col-md-6 col-sm-12">
               <h4 className="text-success mb-4">Quick Links</h4>
-              <a
-                className="btn btn-link text-black"
-                href="about"
-                style={{ textDecoration: "none" }}
-              >
-                About Us
-              </a>
-              <a
-                className="btn btn-link text-black"
-                href="contact"
-                style={{ textDecoration: "none" }}
-              >
-                Contact Us
-              </a>
-              <a
-                className="btn btn-link text-black"
-                href="*"
-                style={{ textDecoration: "none" }}
-              >
-                Our Services
-              </a>
+              <p className="p-0 m-0">
+                <Link
+                  to={"about"}
+                  className="text-black text-decoration-none mobile-number"
+                >
+                  Our Services
+                </Link>
+              </p>
+              <p className="p-0 m-0">
+                <Link
+                  to={"gallery"}
+                  className="text-black text-decoration-none mobile-number"
+                >
+                  Gallery
+                </Link>
+              </p>
+              <p className="p-0 m-0">
+                <Link
+                  to={"blog"}
+                  className="text-black text-decoration-none mobile-number"
+                >
+                  Blogs
+                </Link>
+              </p>
+              <p className="p-0 m-0">
+                <Link
+                  to={"about"}
+                  className="text-black text-decoration-none mobile-number"
+                >
+                  About Us
+                </Link>
+              </p>
+              <p className="p-0 m-0">
+                <Link
+                  to={"contact"}
+                  className="text-black text-decoration-none mobile-number"
+                >
+                  Contact Us
+                </Link>
+              </p>
+              <p className="p-0 m-0">
+                <Link
+                  to={"career"}
+                  className="text-black text-decoration-none mobile-number"
+                >
+                  Career
+                </Link>
+              </p>
 
-              <div className="d-flex pt-3">
+              <div className="d-flex pt-3 flex-wrap">
                 <a
                   className="btn btn-square btn-success rounded-circle me-2"
                   href="https://www.instagram.com/greengoldprimengp/?hl=en"
@@ -72,7 +99,6 @@ const Footer = () => {
               </div>
               <div className="d-flex mb-2">
                 <i className="fa fa-phone-alt text-success me-3 mt-2"></i>
-
                 <a
                   href="tel:+918208922329"
                   className="text-black text-decoration-none mobile-number"
@@ -83,7 +109,6 @@ const Footer = () => {
 
               <div className="d-flex mb-2">
                 <i className="fa fa-envelope text-success me-3 mt-2"></i>
-
                 <a
                   href="mailto:+9022755384"
                   className="text-black text-decoration-none mobile-number"
@@ -97,16 +122,12 @@ const Footer = () => {
               <h4 className="text-success mb-4 ">Google Map</h4>
               <Card
                 className="relative"
-                style={{
-                  height: "80%",
-                  width: "100%",
-                  position: "relative",
-                }}
+                style={{ height: "80%", width: "100%" }}
               >
                 <iframe
                   src={
                     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3576004459837!2d79.07640487752263!3d21.138162533855983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c15227d4a987%3A0x9bab39962551c484!2sGreen%20Gold%20Prime%20by%20Maitreya%20Group!5e0!3m2!1sen!2sin!4v1729858104220!5m2!1sen!2sin"
-                  } // Pass the iframe source URL as a prop
+                  }
                   title="Embedded Content"
                   loading="lazy"
                   className="rounded-md"
@@ -115,7 +136,7 @@ const Footer = () => {
                     height: "100%",
                     width: "100%",
                     border: "none",
-                    borderRadius: "0.375rem", // Bootstrap's rounded-md equivalent
+                    borderRadius: "0.375rem",
                     objectFit: "cover",
                   }}
                 />

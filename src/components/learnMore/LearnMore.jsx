@@ -19,7 +19,11 @@ function LearnMore() {
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col-12 col-md-6 mb-4 text-center">
               <div className="image-container">
-                <Link to={"product"} className="link-button">
+                <Link
+                  to={"product"}
+                  className="link-button"
+                  aria-label="Explore Our Product"
+                >
                   <img
                     className="hover-image"
                     src={GreenGoldSunset}
@@ -33,7 +37,11 @@ function LearnMore() {
             </div>
             <div className="col-12 col-md-6 mb-4 text-center">
               <div className="image-container">
-                <Link to={"about"} className="link-button">
+                <Link
+                  to={"about"}
+                  className="link-button"
+                  aria-label="Learn About Us"
+                >
                   <img
                     className="hover-image"
                     src={GreenGoldSunset}

@@ -1,11 +1,16 @@
-/* Add this CSS to your styles */
+.container-fluid,
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
 .navbar-collapse {
   transition: max-height 0.5s ease-in-out;
   overflow: hidden;
 }
 
 .navbar-collapse.show {
-  max-height: 500px; /* Set the height to ensure smooth transition */
+  max-height: auto; /* Allow full height */
 }
 
 .navbar-toggler-icon {
@@ -14,4 +19,8 @@
 
 .navbar-toggler-icon.open {
   transform: rotate(90deg); /* Rotate when open */
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }

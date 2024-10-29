@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../../img/logo.png";
-// import { CgMenuGridO } from "react-icons/cg";
-import { IoIosArrowDroprightCircle } from "react-icons/io";
-import { IoIosArrowDropleftCircle } from "react-icons/io";
+import {
+  IoIosArrowDroprightCircle,
+  IoIosArrowDropleftCircle,
+} from "react-icons/io";
 import { Dropdown } from "react-bootstrap";
 
 function Header() {
@@ -25,7 +26,12 @@ function Header() {
         backdropFilter: "blur(10px)",
       }}
     >
-      <div className="container">
+      <div
+        className="container-fluid"
+        style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
+      >
+        {" "}
+        {/* Updated to container-fluid for responsiveness */}
         <nav className="navbar navbar-expand-lg navbar-light py-2 py-lg-0">
           <NavLink to="/" className="navbar-brand">
             <img
@@ -63,11 +69,10 @@ function Header() {
                 Home
               </NavLink>
 
-              {/* Dropdown with custom Bootstrap styling */}
               <Dropdown className="nav-item">
                 <Dropdown.Toggle
                   as="a"
-                  className="nav-link dropdown-toggle" // Use nav-link dropdown-toggle styling
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="dropdownPages"
                 >
@@ -77,21 +82,21 @@ function Header() {
                 <Dropdown.Menu className="dropdown-menu bg-light rounded-0 m-0">
                   <Dropdown.Item
                     as={NavLink}
-                    to="/sandalwood"
+                    to="/sandalwood-farms&club-house"
                     className="dropdown-item"
                   >
                     Sandalwood Farms & Club House
                   </Dropdown.Item>
                   <Dropdown.Item
                     as={NavLink}
-                    to="/luxury"
+                    to="/ashapevilla-luxuryvilla"
                     className="dropdown-item"
                   >
                     Luxury 3bhk Villa
                   </Dropdown.Item>
                   <Dropdown.Item
                     as={NavLink}
-                    to="/commercial"
+                    to="/commercial-plots"
                     className="dropdown-item"
                   >
                     Any Commercial Plots
@@ -125,6 +130,7 @@ function Header() {
               >
                 About
               </NavLink>
+
               <NavLink
                 to="/contact"
                 className="nav-item nav-link"
@@ -135,12 +141,12 @@ function Header() {
               </NavLink>
 
               <NavLink
-                to="/carrier"
+                to="/career"
                 className="nav-item nav-link"
                 activeClassName="active"
                 onClick={handleNavLinkClick}
               >
-                Carrier
+                Career
               </NavLink>
             </div>
           </div>

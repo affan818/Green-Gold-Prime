@@ -16,8 +16,6 @@ function Counter({ start, end }) {
             className="text-success display-1"
             style={{ fontFamily: "cursive" }}
           >
-            {" "}
-            {/* Bootstrap classes */}
             <CountUp start={start} end={end} duration={2} delay={0} />+
           </h1>
         )}

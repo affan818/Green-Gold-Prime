@@ -1,0 +1,11 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container-fluid,
+.container-xxl {
+  max-width: 100%; /* Ensure containers do not exceed the viewport width */
+  padding-left: 0; /* Prevent horizontal scroll */
+  padding-right: 0; /* Prevent horizontal scroll */
+}

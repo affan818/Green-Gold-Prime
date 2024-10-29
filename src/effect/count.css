@@ -1,0 +1,31 @@
+.product {
+  background-color: #f9f9f9; /* Light background for the section */
+}
+
+.section-title {
+  margin-bottom: 40px; /* Space below title */
+}
+
+h4 {
+  margin-top: 10px; /* Space above subheadings */
+  font-weight: 600; /* Slightly bold */
+  font-size: 1.25rem; /* Font size for headings */
+}
+
+.text-success {
+  color: #28a745; /* Bootstrap success color */
+}
+
+.display-1 {
+  font-size: 3rem; /* Main counter size */
+}
+
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 2.5rem; /* Smaller size for mobile */
+  }
+
+  h4 {
+    font-size: 1rem; /* Adjust subheading size for mobile */
+  }
+}

@@ -1,6 +1,7 @@
 import "./info.css";
 import { Link } from "react-router-dom";
 import icon from "../../../img/youtubeicon.png";
+
 function Info() {
   const videoId = "ZJG1FjH1cEE"; // Replace with your actual YouTube video ID
   const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
@@ -25,7 +26,7 @@ function Info() {
               Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet.
             </p>
             <Link to={"about"}>
-              <button className="mb-sm-5" style={{ fontFamily: "cursive" }}>
+              <button className="mb-sm-5" style={{ fontFamily: "Poppins" }}>
                 Learn More
               </button>
             </Link>
@@ -38,9 +39,8 @@ function Info() {
                 src={thumbnailUrl}
                 alt="Video Thumbnail"
               />
-              <div className="play-button">
-                <img src={icon} alt="youtubebtn" />{" "}
-                {/* You can replace this with an SVG or icon */}
+              <div className="play-button" aria-label="Play Video">
+                <img src={icon} alt="Play Video" />
               </div>
             </a>
           </div>

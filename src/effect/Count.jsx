@@ -1,4 +1,5 @@
 import Counter from "./Counter";
+import "./count.css";
 
 function Count() {
   return (

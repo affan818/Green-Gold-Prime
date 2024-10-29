@@ -42,7 +42,7 @@
   background-color: green; /* Button color */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
-  font-family: cursive; /* Cursive font */
+  font-family: "Poppins"; /* Cursive font */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s ease, transform 0.3s ease;
   /* Smooth transition */
